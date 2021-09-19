@@ -122,13 +122,13 @@ public class Factura {
     }
 
     //metodos
-    public double subtTotalCompra(String codigoP) {
+    public double subtTotalCompra() {
         double precio = 0;
-        if (producto.getCodigoProducto().equals(codigoP)) {
+//        if (producto.getCodigoProducto().equals(codigoP)) {
             precio = cantidadProducto * producto.getPrecioProducto();
-        } else {
+        
             //poner un jotaoption
-        }
+       
         return precio;
 
     }
@@ -141,7 +141,7 @@ public class Factura {
     }
 
     public double totalCompra() {
-        double precioFinal = subTotal + iva;
+        double precioFinal = ivaProducto(this.iva,subTotal)+subtTotalCompra();
         return precioFinal;
 
     }
