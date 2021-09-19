@@ -179,14 +179,7 @@ public class Factura {
         productos.add(pro);
     }
 
-    //mostrar lista de productos
-    public List<Producto> mostrarProductos() {
-        List<Producto> prodcutosAux = new ArrayList<>();
-        for (Producto pro : productos) {
-            prodcutosAux.add(pro);
-        }
-        return prodcutosAux;
-    }
+
 
     // ingresar Factura
     public void facturacion(Factura fac) {
