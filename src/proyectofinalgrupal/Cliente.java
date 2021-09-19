@@ -7,21 +7,19 @@ package proyectofinalgrupal;
 
 /**
  *
- * @author Usuario
+ * @author Ivonne Ramirez
  */
-
 public class Cliente extends Usuario {
-    //Atributos
-    private String correoElectronico;
-    
-    //Constructor
 
-    public Cliente(String correoElectronico, String nombre, String apellido, int cedula, int celular, String direccion) {
+//Variables
+    private String correoElectronico;
+
+// constructor que llama a la clase padre 
+    public Cliente(String nombre, String apellido, int cedula, int celular, String direccion) {
         super(nombre, apellido, cedula, celular, direccion);
-        this.correoElectronico = correoElectronico;
     }
-    
-     //Método get y set
+
+//Métodos get y set
     public String getCorreoElectronico() {
         return correoElectronico;
     }
@@ -30,12 +28,10 @@ public class Cliente extends Usuario {
         this.correoElectronico = correoElectronico;
     }
 
-    
-    //Método toString sobreescrito 
+// Método to string que contendra la informacion 
     @Override
     public String toString() {
-        return "Cliente{" + "correoElectronico=" + correoElectronico + '}';
+        return "* Cliente *" + "\n*Correo Electrónico: " + correoElectronico + '.';
     }
 
-    
 }
