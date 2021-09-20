@@ -32,6 +32,12 @@ public class Producto {
         this.marcaProducto = marcaProducto;
     }
 
+    public Producto(String codigoProducto, String nombreProducto, String marcaProducto) {
+        this.codigoProducto = codigoProducto;
+        this.nombreProducto = nombreProducto;
+        this.marcaProducto = marcaProducto;
+    }
+
     
     
     public String getCodigoProducto() {

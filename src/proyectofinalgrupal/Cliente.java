@@ -16,10 +16,16 @@ public class Cliente extends Usuario {
     
     //Constructor
 
-    public Cliente(String correoElectronico, String nombre, String apellido, int cedula, int celular, String direccion) {
+    public Cliente(String correoElectronico, String nombre, String apellido, String cedula, String celular, String direccion) {
         super(nombre, apellido, cedula, celular, direccion);
         this.correoElectronico = correoElectronico;
     }
+       public Cliente(  String nombre, String apellido,String cedula) {
+        super( nombre, apellido,cedula);
+        
+    }
+
+   
     
      //Método get y set
     public String getCorreoElectronico() {
